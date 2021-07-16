@@ -1,0 +1,19 @@
+main {
+  min-height: 80vh;
+}
+.cart {
+  margin-left: auto;
+}
+
+.left {
+  width: 30%;
+  min-height: 80vh;
+  background-color: aquamarine;
+  float: left;
+}
+.right {
+  width: 70%;
+  min-height: 80vh;
+  background-color: blueviolet;
+  float: left;
+}
