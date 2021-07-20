@@ -2,7 +2,8 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomeScreen from './screens/HomeScreen';
+import Chat from './components/chat/Chat';
+import Join from './components/join/Join';
 function App() {
 
 
@@ -11,7 +12,12 @@ function App() {
       <Header />
       <main>
 
-        <Route path='/' component={HomeScreen} />
+        <div className='left'>All Friends</div>
+
+        <div className='right'>
+          <Route exact path='/' component={Join} />
+          <Route exact path='/chat' component={Chat} />
+        </div>
 
 
       </main>
